@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 with open('Apple.html') as html_file:
-    soup = BeautifulSoup(html_file, 'lxml')
+    soup = BeautifulSoup(html_file, 'html.parser')
 
 
 table = soup.find("tbody")
